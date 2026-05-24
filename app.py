@@ -36,10 +36,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Auto refresh every 10 minutes
-from streamlit_autorefresh import st_autorefresh
-count = st_autorefresh(interval=600000, key="aqi_refresh")
-
 # ─────────────────────────────────────────
 # CUSTOM CSS
 # ─────────────────────────────────────────
