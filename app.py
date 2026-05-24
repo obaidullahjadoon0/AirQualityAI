@@ -3,6 +3,11 @@ import pandas as pd
 import numpy as np
 import requests
 import joblib
+try:
+    from tensorflow.keras.models import load_model
+    TF_AVAILABLE = True
+except:
+    TF_AVAILABLE = False
 import os
 import plotly.graph_objects as go
 import plotly.express as px
